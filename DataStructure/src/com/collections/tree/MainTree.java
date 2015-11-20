@@ -7,10 +7,12 @@ public class MainTree {
 		Tree treeB = getTree2();
 		Tree treeC = getTree3();
 		
-		MainTree main = new MainTree();
-		main.inOrder(treeA);
-		main.inOrder(treeB);
-		main.inOrder(treeC);
+		TreeTraversal treeTraversal = new TreeTraversal();
+		treeTraversal.inOrder(treeA);
+		treeTraversal.inOrder(treeB);
+		treeTraversal.inOrder(treeC);
+		
+		treeTraversal.DFS(getTree2());
 
 	}
 	
